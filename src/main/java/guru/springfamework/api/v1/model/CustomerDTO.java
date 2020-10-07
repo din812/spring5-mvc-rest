@@ -1,10 +1,13 @@
 package guru.springfamework.api.v1.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 @Data
 public class CustomerDTO {
+
+    @ApiModelProperty(value = "This is id", required = true)
     private Long id;
     private String firstName;
     private String lastName;
